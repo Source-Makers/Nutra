@@ -1,9 +1,0 @@
-.left-sidebar {
-    grid-column: 1/2;
-    background-color: #EEF1F4;
-    height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
