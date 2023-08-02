@@ -87,6 +87,7 @@ there are many messages in message-area
   background-color: #91baff;
   gap: 10px;
   padding: 10px;
+  margin-right: 10px;
 }
 
 .list-of-suggestions {
@@ -132,6 +133,7 @@ there are many messages in message-area
   background-color: #91baff;
   gap: 10px;
   padding: 10px;
+  margin-right: 10px;
 }
 
 .list-of-findings {
@@ -183,9 +185,6 @@ there are many messages in message-area
   border-radius: 12px;
 }
 
-.toHide {
-  background-color: rgba(0, 0, 0, 0);
-}
 /* Form */
 .form-container {
   display: flex;
