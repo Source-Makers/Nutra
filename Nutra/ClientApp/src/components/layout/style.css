@@ -27,9 +27,6 @@ body {
 
 /* Meassage area */
 .message-area {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
   overflow-y: scroll;
   padding-top: 10px;
 }

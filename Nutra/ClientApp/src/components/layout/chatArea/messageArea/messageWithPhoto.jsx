@@ -1,10 +1,4 @@
-export default function MessageWithPhoto({ path, toHide = true }) {
-  if (toHide) {
-    return (
-      <div className="message-with-photo toHide">
-      </div>
-    );
-  }
+export default function MessageWithPhoto({ path }) {
   return (
     <div className="message-with-photo">
       <img
