@@ -36,8 +36,14 @@ body {
 .message-area::-webkit-scrollbar {
   display: none;
 }
+
+/* I've no idea how exactly this works but
+if get rid of following selector, content of
+chat-area will exceed viewport's height if
+there are many messages in message-area 
+ */
 .chat-area {
-  overflow-y:scroll;
+  overflow-y:scroll;  
 }
 
 
@@ -147,6 +153,7 @@ body {
    border-bottom-left-radius: 12px;
   background-color: burlywood;
   padding: 10px;
+  
 }
 
 .list-of-findings::-webkit-scrollbar {
@@ -158,8 +165,17 @@ body {
   border-radius: inherit;
   display: flex;
   justify-content: space-between;
+
 }
 
+.finding-confirmation-button {
+  align-self: flex-end;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
 
 /* Message with photo */
 .message-with-photo {
@@ -216,4 +232,12 @@ body {
   background-color: #f8f9fa;
   cursor: pointer;
   padding: 6px;
+}
+
+
+/* Right sidebar */
+.saved-recipes-container {
+  grid-column: 3/4;
+  background-color: #91baff;
+
 }

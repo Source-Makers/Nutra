@@ -1,5 +1,6 @@
 import LeftSidebar from "./leftSidebar/LeftSidebar";
 import ChatArea from "./chatArea/chatArea";
+import SavedRecipes from "./savedRecipes/SavedRecipes";
 import "./style.css";
 
 export default function Layout() {
@@ -7,6 +8,7 @@ export default function Layout() {
     <div className="container">
       <LeftSidebar />
       <ChatArea />
+      <SavedRecipes />
     </div>
   );
 }

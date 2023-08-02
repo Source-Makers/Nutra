@@ -8,6 +8,9 @@ export default function ListOfFindings() {
         <Finding foodTitle="Beaf" />
         <Finding foodTitle="Pork" />
       </div>
+      <button type="button" className="finding-confirmation-button">
+        Correct
+      </button>
     </div>
   );
 }
