@@ -24,7 +24,6 @@ body {
   grid-template-rows: 0.9fr auto;
 }
 
-
 /* Meassage area */
 .message-area {
   background-color: antiquewhite;
@@ -49,23 +48,54 @@ body {
   border-bottom-right-radius: 0px;
 }
 
-.message-of-suggestions {
-  background-color: #91BAFF;
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Container for all types of messages */
+.message {
+  background-color: #91baff;
+  padding: 10px;
+  border-radius: 12px 12px 12px 0px;
 }
 
-.suggestions-area {
-  background-color: #CDD5DE;
-  max-width: 100%;
-  max-height: 100%;
-  margin-top: 12px;
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
+/* Message of recipe suggestions */
+.list-of-suggestions-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #cdd5de;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.list-of-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 120px;
+  border-radius: inherit;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 20px;
+  min-height: 80px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: inherit;
+}
+
+.upper,
+.lower {
+  display: flex;
+}
+
+.upper {
+  justify-content: space-between;
+}
+
+.lower {
+  align-self: flex-end;
 }
 
 /* Form */
