@@ -1,11 +1,12 @@
 export default function Suggestion({ title, description }) {
-    return (
-        <div className="suggestion">
-            <div className="upper">
-                <span>{title}</span>
-                <span>O</span>
-            </div>
-            <div className="lower">Learn</div>
-        </div>
-    )
+  return (
+    <div className="suggestion">
+      <span>{title}</span>
+
+      <div>
+        <span>O</span>
+        <span>Learn</span>
+      </div>
+    </div>
+  );
 }

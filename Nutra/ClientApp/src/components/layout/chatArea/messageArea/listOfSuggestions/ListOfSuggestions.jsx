@@ -6,7 +6,7 @@ export default function ListOfSuggestions() {
       <div>I suggest you recipes:</div>
       <div className="list-of-suggestions">
         <Suggestion title="Fried eggs and chicken"/>
-        <Suggestion title="Avocado with pineapple"/>
+        {/* <Suggestion title="Avocado with pineapple"/> */}
         
       </div>
     </div>
