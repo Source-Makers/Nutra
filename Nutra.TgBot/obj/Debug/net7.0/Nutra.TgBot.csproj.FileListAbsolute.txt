@@ -1,0 +1,12 @@
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\bin\Debug\net7.0\Nutra.TgBot.deps.json
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\bin\Debug\net7.0\Nutra.TgBot.dll
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\bin\Debug\net7.0\Nutra.TgBot.pdb
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.csproj.AssemblyReference.cache
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.AssemblyInfoInputs.cache
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.AssemblyInfo.cs
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.csproj.CoreCompileInputs.cache
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.dll
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\refint\Nutra.TgBot.dll
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\Nutra.TgBot.pdb
+C:\D\Programming\C#\Projects\Nutra\Nutra.TgBot\obj\Debug\net7.0\ref\Nutra.TgBot.dll

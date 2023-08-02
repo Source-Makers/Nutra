@@ -1,5 +1,7 @@
-var builder = WebApplication.CreateBuilder(args);
+using Nutra.TgBot.Repository;
 
+var builder = WebApplication.CreateBuilder(args);
+Repository tgBot = new();
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
@@ -23,5 +25,7 @@ app.MapControllerRoute(
     pattern: "{controller}/{action=Index}/{id?}");
 
 app.MapFallbackToFile("index.html");
+
+tgBot.RunBot();
 
 app.Run();

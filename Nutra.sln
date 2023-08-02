@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutra", "Nutra\Nutra.csproj", "{46EB5FC7-2BCB-4F9B-9709-B71553F5807F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nutra", "Nutra\Nutra.csproj", "{46EB5FC7-2BCB-4F9B-9709-B71553F5807F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Telegram Bot", "Telegram Bot", "{7F281B47-2423-480E-A0A5-7BAFEC1FBFC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{26BA3BD4-8256-494D-AA54-4EF0A5C3DB1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutra.Service", "Nutra.Service\Nutra.Service.csproj", "{3C44F27D-235D-4F67-BE28-B0F59089A2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutra.TgBot", "Nutra.TgBot\Nutra.TgBot.csproj", "{6C997B39-A071-488F-9D35-E99C501211B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,21 @@ Global
 		{46EB5FC7-2BCB-4F9B-9709-B71553F5807F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46EB5FC7-2BCB-4F9B-9709-B71553F5807F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46EB5FC7-2BCB-4F9B-9709-B71553F5807F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C44F27D-235D-4F67-BE28-B0F59089A2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C44F27D-235D-4F67-BE28-B0F59089A2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C44F27D-235D-4F67-BE28-B0F59089A2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C44F27D-235D-4F67-BE28-B0F59089A2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C997B39-A071-488F-9D35-E99C501211B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C997B39-A071-488F-9D35-E99C501211B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C997B39-A071-488F-9D35-E99C501211B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C997B39-A071-488F-9D35-E99C501211B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C44F27D-235D-4F67-BE28-B0F59089A2A8} = {26BA3BD4-8256-494D-AA54-4EF0A5C3DB1E}
+		{6C997B39-A071-488F-9D35-E99C501211B1} = {7F281B47-2423-480E-A0A5-7BAFEC1FBFC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9624A4F-E14E-413D-B87D-0646DDFF9DDF}
