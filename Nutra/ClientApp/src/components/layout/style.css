@@ -251,11 +251,12 @@ there are many messages in message-area
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow-y: auto;
-  height: 93%;
+  overflow-y: scroll;
+  height: 91%;
 }
 
 .list-of-saved-recipes::-webkit-scrollbar {
