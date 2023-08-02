@@ -6,7 +6,7 @@ import "./style.css";
 export default function Layout() {
   return (
     <div className="container">
-      <LeftSidebar />
+      {/* <LeftSidebar /> */}
       <ChatArea />
       <SavedRecipes />
     </div>
