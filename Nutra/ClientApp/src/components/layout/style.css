@@ -26,21 +26,44 @@ body {
 
 /* Meassage area */
 .message-area {
-  background-color: antiquewhite;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  overflow-y:scroll;
+  padding-top: 10px;
 }
+
+.message-area::-webkit-scrollbar {
+  display: none;
+}
+.chat-area {
+  overflow-y:scroll;
+}
+
 
 .message-area > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 10px;
+}
+
+.bot-messages {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  align-items: flex-start;
+}
+
+.bot-messages > div {
+  border-radius: 12px;
+  border-bottom-left-radius: 0px;
 }
 
 .user-messages {
   margin-bottom: 10px;
   margin-right: 10px;
+  align-items: flex-end;
+  
 }
 
 .user-messages > div {
@@ -62,18 +85,24 @@ body {
   background-color: #cdd5de;
   gap: 10px;
   padding: 10px;
-  border-radius: 12px 12px 12px 12px;
 }
 
 .list-of-suggestions {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 120px;
   border-radius: inherit;
+  border-bottom-right-radius: 12px;
+   border-bottom-left-radius: 12px;
+  background-color: burlywood;
+  padding: 10px;
 }
 
+.list-of-suggestions::-webkit-scrollbar {
+  display: none;
+}
 .suggestion {
   display: flex;
   flex-direction: column;
@@ -98,12 +127,65 @@ body {
   align-self: flex-end;
 }
 
+/* Message of findings (food) on photo */
+.list-of-findings-container {
+   display: flex;
+  flex-direction: column;
+  background-color: #cdd5de;
+  gap: 10px;
+  padding: 10px;
+}
+
+.list-of-findings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+  height:50px;
+  border-radius: inherit;
+  border-bottom-right-radius: 12px;
+   border-bottom-left-radius: 12px;
+  background-color: burlywood;
+  padding: 10px;
+}
+
+.list-of-findings::-webkit-scrollbar {
+  display: none;
+}
+.finding {
+  background-color: white;
+  padding: 10px;
+  border-radius: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Message with photo */
+.message-with-photo {
+  height: 200px;
+  background-color: #91baff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-image {
+  max-width:100%;
+  max-height:100%;
+  border-radius: 12px;
+}
+
+.toHide {
+  background-color: rgba(0, 0, 0, 0);
+}
 /* Form */
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 5px black solid;
+  background-color: white;
 }
 
 #submit-form {

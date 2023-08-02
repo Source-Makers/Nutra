@@ -1,14 +1,19 @@
-import Message from "./message/Message";
-// import Suggestion from "./message/listOfSuggestions/Suggestion";
-import ListOfSuggestions from "./message/listOfSuggestions/ListOfSuggestions";
+import ListOfSuggestions from "./listOfSuggestions/ListOfSuggestions";
+import ListOfFindings from "./listOfFindings/ListOfFindings";
+import MessageWithPhoto from "./messageWithPhoto";
 
 export default function MessageArea() {
   return (
     <div className="message-area">
-      <div className="bot-messages"></div>
+      <div className="bot-messages">
+      <ListOfSuggestions />
+      <ListOfSuggestions />
+        <ListOfSuggestions />
+        <ListOfFindings />
+        <MessageWithPhoto path="./photoesFromUser/1.jpg" />
+      </div>
       <div className="user-messages">
-        {/* <ListOfSuggestions /> */}
-        <Message />
+        <MessageWithPhoto path="./photoesFromUser/1.jpg" toHide={false} />
       </div>
     </div>
   );
