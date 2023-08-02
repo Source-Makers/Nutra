@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gxpuwQK3UDEV5kTeTsIi9blsgTo9J1n4Gq7zxUvf/0JJ9GfdySFPOCnZY2uCtmnlfooO1QHt777ouUHT+Tr4ZQ==",
+  "success": true,
+  "projectFilePath": "C:\\D\\Programming\\C#\\Projects\\Nutra\\Nutra.TgBot\\Nutra.TgBot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kosty\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\kosty\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
