@@ -5,7 +5,7 @@ body {
 .container {
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.75fr 2fr 0.75fr;
   height: 100vh;
 }
 
@@ -29,7 +29,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  overflow-y:scroll;
+  overflow-y: scroll;
   padding-top: 10px;
 }
 
@@ -43,9 +43,8 @@ chat-area will exceed viewport's height if
 there are many messages in message-area 
  */
 .chat-area {
-  overflow-y:scroll;  
+  overflow-y: scroll;
 }
-
 
 .message-area > div {
   display: flex;
@@ -69,7 +68,6 @@ there are many messages in message-area
   margin-bottom: 10px;
   margin-right: 10px;
   align-items: flex-end;
-  
 }
 
 .user-messages > div {
@@ -88,7 +86,7 @@ there are many messages in message-area
 .list-of-suggestions-container {
   display: flex;
   flex-direction: column;
-  background-color: #cdd5de;
+  background-color: #91baff;
   gap: 10px;
   padding: 10px;
 }
@@ -101,8 +99,8 @@ there are many messages in message-area
   height: 120px;
   border-radius: inherit;
   border-bottom-right-radius: 12px;
-   border-bottom-left-radius: 12px;
-  background-color: burlywood;
+  border-bottom-left-radius: 12px;
+  background-color: #cdd5de;
   padding: 10px;
 }
 
@@ -117,7 +115,9 @@ there are many messages in message-area
   min-height: 80px;
   justify-content: space-between;
   padding: 10px;
-  border-radius: inherit;
+  border-radius: 12px;
+  border: 1px solid #eef1f4;
+  max-width: 100%;
 }
 
 .upper,
@@ -135,9 +135,9 @@ there are many messages in message-area
 
 /* Message of findings (food) on photo */
 .list-of-findings-container {
-   display: flex;
+  display: flex;
   flex-direction: column;
-  background-color: #cdd5de;
+  background-color: #91baff;
   gap: 10px;
   padding: 10px;
 }
@@ -147,13 +147,12 @@ there are many messages in message-area
   flex-direction: column;
   gap: 5px;
   overflow-y: auto;
-  height:50px;
+  height: 50px;
   border-radius: inherit;
   border-bottom-right-radius: 12px;
-   border-bottom-left-radius: 12px;
-  background-color: burlywood;
+  border-bottom-left-radius: 12px;
+  background-color: #cdd5de;
   padding: 10px;
-  
 }
 
 .list-of-findings::-webkit-scrollbar {
@@ -165,7 +164,6 @@ there are many messages in message-area
   border-radius: inherit;
   display: flex;
   justify-content: space-between;
-
 }
 
 .finding-confirmation-button {
@@ -188,8 +186,8 @@ there are many messages in message-area
 }
 
 .user-image {
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 12px;
 }
 
@@ -234,10 +232,49 @@ there are many messages in message-area
   padding: 6px;
 }
 
-
 /* Right sidebar */
-.saved-recipes-container {
-  grid-column: 3/4;
-  background-color: #91baff;
+.saved-recipes-header-container {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 10px;
+}
 
+.saved-recipes-container {
+  border-left: 1px solid black;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.list-of-saved-recipes {
+  margin-top: 10px;
+  margin-bottom: 43px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  flex-basis: 90%;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.list-of-saved-recipes::-webkit-scrollbar {
+  display: none;
+}
+
+.saved-recipes-button-container {
+  position: absolute;
+  bottom: 10px;
+  width: 80%;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
