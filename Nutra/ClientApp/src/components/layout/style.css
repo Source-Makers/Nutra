@@ -25,6 +25,10 @@ body {
   grid-template-rows: 0.9fr auto;
 }
 
+button[type="button"] {
+  cursor: pointer;
+}
+
 /* Meassage area */
 .message-area {
   overflow-y: scroll;
@@ -166,7 +170,6 @@ there are many messages in message-area
   padding: 5px;
   border-radius: 8px;
   border: none;
-  cursor: pointer;
 }
 
 /* Message with photo */

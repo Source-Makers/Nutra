@@ -7,8 +7,6 @@ export default function MessageArea() {
     <div className="message-area">
       <div className="bot-messages">
         <ListOfSuggestions />
-        <ListOfSuggestions />
-        <ListOfSuggestions />
         <ListOfFindings />
       </div>
       <div className="user-messages">

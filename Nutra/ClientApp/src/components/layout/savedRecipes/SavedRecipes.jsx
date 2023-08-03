@@ -5,15 +5,15 @@ export default function SavedRecipes() {
       <div className="extra-container">
         <div className="saved-recipes-header">Saved recipes</div>
         <div className="list-of-saved-recipes">
-          <Suggestion title="Fried eggs and chicken" />
-          <Suggestion title="Fried eggs and chicken" />
-          <Suggestion title="Fried eggs and chicken" />
-        <Suggestion title="Fried eggs and chicken" />
-        <Suggestion title="Fried eggs and chicken" />
-        <Suggestion title="Fried eggs and chicken" />
-        <Suggestion title="Fried eggs and chicken" />
-        <Suggestion title="Fried eggs and chicken" />
-        <Suggestion title="Fried eggs and chicken" />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
+          <Suggestion title="Fried eggs and chicken" isSaved={true} />
         </div>
       </div>
 
