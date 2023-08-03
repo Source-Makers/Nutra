@@ -22,7 +22,13 @@ body {
   /* grid-column: 2/3; */
   grid-column: 1/3;
   display: grid;
-  grid-template-rows: 0.9fr auto;
+  grid-template-rows: auto 100px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.chat-area::-webkit-scrollbar {
+  display: none;
 }
 
 button[type="button"] {
@@ -30,28 +36,13 @@ button[type="button"] {
 }
 
 /* Meassage area */
-.message-area {
-  overflow-y: scroll;
-  padding-top: 10px;
-}
-
-.message-area::-webkit-scrollbar {
-  display: none;
-}
-
-/* I've no idea how exactly this works but
-if get rid of following selector, content of
-chat-area will exceed viewport's height if
-there are many messages in message-area 
- */
-.chat-area {
-  overflow-y: scroll;
-}
 
 .message-area {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 10px;
+  padding: 10px 0px;
 }
 
 .message-area > div {
@@ -66,34 +57,6 @@ there are many messages in message-area
   align-self: flex-end;
   border-bottom-right-radius: 0px;
 }
-/* .message-area > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.bot-messages {
-  margin-bottom: 10px;
-  margin-left: 10px;
-  align-items: flex-start;
-}
-
-.bot-messages > div {
-  border-radius: 12px;
-  border-bottom-left-radius: 0px;
-}
-
-.user-messages {
-  margin-bottom: 10px;
-  margin-right: 10px;
-  align-items: flex-end;
-}
-
-.user-messages > div {
-  border-radius: 12px;
-  border-bottom-right-radius: 0px;
-} */
 
 /* Container for all types of messages */
 .message {
@@ -213,7 +176,10 @@ there are many messages in message-area
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.7);
+  
+  position: sticky;
+  bottom: 0;
 }
 
 #submit-form {
@@ -221,7 +187,6 @@ there are many messages in message-area
   border: 1px solid #cdd5de;
   display: flex;
   flex-direction: column;
-  margin: 0px 40px;
   overflow: hidden;
   flex-basis: 520px;
 }
@@ -231,6 +196,7 @@ there are many messages in message-area
 }
 
 .custom-button {
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
