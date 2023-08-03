@@ -2,19 +2,15 @@ import ListOfSuggestions from "./listOfSuggestions/ListOfSuggestions";
 import ListOfFindings from "./listOfFindings/ListOfFindings";
 import MessageWithPhoto from "./messageWithPhoto";
 
-export default function MessageArea() {
+export default function MessageArea({ lastPictureSent }) {
   return (
     <div className="message-area">
-      <div className="bot-messages">
-      <ListOfSuggestions />
-      <ListOfSuggestions />
-        <ListOfSuggestions />
-        <ListOfFindings />
-        <MessageWithPhoto path="./photoesFromUser/1.jpg" />
-      </div>
-      <div className="user-messages">
-        <MessageWithPhoto path="./photoesFromUser/1.jpg" toHide={false} />
-      </div>
+      <MessageWithPhoto sender="user" path={lastPictureSent} />
+      {/* <ListOfSuggestions sender="bot" />
+      <ListOfSuggestions sender="bot" />
+      <ListOfSuggestions sender="bot" />
+      <ListOfFindings sender="bot" />
+      <MessageWithPhoto path="./photoesFromUser/1.jpg" sender="user" /> */}
     </div>
   );
 }
