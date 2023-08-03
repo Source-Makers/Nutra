@@ -1,8 +1,8 @@
 import Finding from "./Finding";
 
-export default function ListOfFindings() {
+export default function ListOfFindings({ sender }) {
   return (
-    <div className="list-of-findings-container">
+    <div className={`list-of-findings-container ${sender}`}>
       <div>That's what I found:</div>
       <div className="list-of-findings">
         <Finding foodTitle="Beaf" />
