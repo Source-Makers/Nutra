@@ -1,17 +1,7 @@
-export default function MessageWithPhoto({ path, toHide = true }) {
-  if (toHide) {
-    return (
-      <div className="message-with-photo toHide">
-      </div>
-    );
-  }
+export default function MessageWithPhoto({ path, sender }) {
   return (
-    <div className="message-with-photo">
-      <img
-        src={require("./photoesFromUser/1.jpg")}
-        alt="User photo"
-        class="user-image"
-      />
+    <div className={`message-with-photo ${sender}`}>
+      <img src={path} alt="User photo" class="user-image" />
     </div>
   );
 }
